@@ -1,0 +1,48 @@
+<!-- This HTML file was created by Adrian Aquino 
+  on January 28, 2022. WORK IN PROGRESS -->
+
+<!DOCTYPE html>
+<html lang="en"> <!-- Language set to English -->
+
+<head>
+  <!-- Meta Tags for Accessibility and Responsiveness-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Rock Paper Scissors</title> <!-- Title of Page -->
+</head>
+
+<body>
+  <div class="container">
+    <div class="titleSpace">
+      <h1>Rock Paper Scissors</h1>
+      <p>Select Rock, Paper, or Scissors below for a match against the computer.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="form-group">
+          <!-- User inputs a number that gets sent to the JS file-->
+          <input type="button" class="input" id="rock" value="Rock" onclick=choose_Rock()>
+          <input type="button" class="input" id="paper" value="Paper" onclick=choose_Paper()>
+          <input type="button" class="input" id="scissors" value="Scissors" onclick=choose_Scissors()>
+        </div>
+        <!-- Empty p elements that gets text from JS file -->
+        <br><br>
+        <div class="outputs">
+          <p id="computerChoice"></p>
+          <p id="message"></p>
+          <p id="score"></p>
+          <p id="totalGames"></p>
+        </div>
+        <span id="reload" onclick="refresh()">&#x21bb;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JS Script -->
+  <script src="myscripts.js"></script>
+
+</body>
+
+</html>
