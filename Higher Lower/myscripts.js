@@ -5,7 +5,7 @@
 let maxNumber = prompt("Please enter a max number");
 
 // Continue prompting user until input is neither invalid nor less than 0
-while (isNaN(maxNumber) || maxNumber <= 0) {
+while (isNaN(maxNumber) || maxNumber < 0.5) {
     alert("This is an invalid input.");
     maxNumber = prompt("Please enter a max number");
 }
