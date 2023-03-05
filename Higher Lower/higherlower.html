@@ -1,0 +1,51 @@
+<!-- This HTML file was created by Adrian Aquino 
+  on January 18, 2022. Completed on January 21, 2022. -->
+
+<!DOCTYPE html>
+<html lang="en"> <!-- Language set to English -->
+
+<head>
+  <!-- Meta Tags for Accessibility and Responsiveness-->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap Framework linked-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Higher - Lower</title> <!-- Title of Page -->
+</head>
+
+<body>
+  <div class="container">
+    <h1>Higher Lower</h1>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="form-group">
+          <!-- Empty p element that gets text from JS file -->
+          <p id="range"></p>
+          <label>Your guess:</label>
+          <!-- User inputs a number that gets sent to the JS file-->
+          <input type="text" id="guess">
+        </div>
+        <!-- Pressing button triggers the guess -->
+        <button type="button" id="btn" class="btn btn-primary" onclick="do_guess()">Guess</button>
+        <!-- Empty p elements that gets text from JS file -->
+        <br><br>
+        <p id="victoryLine"></p>
+        <p id="lastGuess"></p>
+        <p id="message"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link to JS Script -->
+  <script src="myscripts.js"></script>
+
+</body>
+
+</html>
+
+<!-- TODO:
+  Don't let the user guess a decimal within range. ~ DONE!
+  Don't let the decimal rejected appear in the guess tracker. ~ DONE
+  Include a feature to restart the game and not continue finished game. ~ DONE
+  Don't let guess tracker include guesses made after finished game. ~ DONE
+-->
